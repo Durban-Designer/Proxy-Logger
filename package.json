@@ -1,6 +1,6 @@
 {
   "name": "@kenth56/proxy-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A logging utility which wraps utility classes in a proxy function. Enables automated logging of any function calls! All logs are written and parsed into markdown to make it easy and clean to debug.",
   "main": "app.js",
   "scripts": {
