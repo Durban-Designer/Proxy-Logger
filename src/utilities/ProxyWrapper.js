@@ -60,6 +60,10 @@ class ProxyWrapper {
     Logger.init(copywrite, name);
   }
 
+  addLog (log) {
+    Logger.addLog(log);
+  }
+
   wrap (object) {
     const node = this;
     return new Proxy(object, {

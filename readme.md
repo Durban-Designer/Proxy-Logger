@@ -96,6 +96,26 @@ module.exports = ProxyWrapper.wrap(new TestClass());
 
   - logs are automatically written when the application closes.
 
+### Manually adding a log
+
+```
+const ProxyWrapper = require('proxy-wrapper');
+
+ProxyWrapper.addLog({
+  class: 'class name',
+  message: 'a string with a message to log',
+  data: {
+    key1: value1,
+    key2: value2,
+    keyn: valuen
+  }
+})
+```
+
+  - Class can be any string
+  - Message can be any string
+  - data can be any JSON object or Array
+
 ### Testing
 
 ```
