@@ -1,6 +1,6 @@
 {
-  "name": "proxy-logger",
-  "version": "0.0.1",
+  "name": "@kenth56/proxy-logger",
+  "version": "1.0.0",
   "description": "A logging utility which wraps utility classes in a proxy function. Enables automated logging of any function calls! All logs are written and parsed into markdown to make it easy and clean to debug.",
   "main": "app.js",
   "scripts": {
@@ -24,5 +24,13 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Durban-Designer/Proxy-Logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Durban-Designer/Proxy-Logger/issues"
+  },
+  "homepage": "https://github.com/Durban-Designer/Proxy-Logger#readme"
 }

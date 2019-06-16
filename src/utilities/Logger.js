@@ -98,6 +98,7 @@ class Logger {
           log.data.forEach(object => {
             file += JSON.stringify(object, null, 4);
           })
+          file += newline;
         }
         file += markup;
         file += newline;

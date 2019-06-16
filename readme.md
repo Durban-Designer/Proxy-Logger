@@ -31,6 +31,7 @@ $ yarn add proxy-logger
 ```
 
 const ProxyWrapper = require('proxy-wrapper');
+
 const copywrite = `Copyright 2019 Durban-Designer : Royce Birnbaum
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -49,7 +50,9 @@ PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS 
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 USE OR OTHER DEALINGS IN THE SOFTWARE.`;
+
 const name = `Proxy Wrapper`;
+
 const location = './logs';
 
 ProxyWrapper.init(copywrite, name, location);
@@ -57,8 +60,11 @@ ProxyWrapper.init(copywrite, name, location);
 ```
 
   - note if you don't specify copywrite it will be as above
+
   - note if you don't specify name it will be as above
+
   - note if you don't specify location it will default to ./logs
+
   - WARNING if you don't call ProxyWrapper.init() the exit listener wont trigger and logs wont write!
 
 ### Wrapping a utility class
@@ -149,7 +155,8 @@ Data:
 {
     "a": null,
     "b": null
-}```
+}
+```
 
 ##### TestClass - 0.02s runtime
 ```
@@ -170,7 +177,8 @@ Data:
 {
     "a": 1,
     "b": null
-}```
+}
+```
 
 ##### TestClass - 0.02s runtime
 ```
@@ -185,7 +193,8 @@ Data:
 {
     "a": 1,
     "b": null
-}```
+}
+```
 
 ##### TestClass - 0.02s runtime
 ```
@@ -206,7 +215,8 @@ Data:
 {
     "a": 1,
     "b": 2
-}```
+}
+```
 
 ##### test - 0.026s runtime
 ```
@@ -215,6 +225,7 @@ Data:
 {
     "object": "test",
     "test": []
-}```
+}
+```
 
 ## Total Runtime 0.028 seconds
