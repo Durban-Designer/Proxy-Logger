@@ -30,7 +30,7 @@ $ yarn add proxy-logger
 
 ```
 
-const ProxyWrapper = require('proxy-wrapper');
+const ProxyLogger = require('proxy-logger');
 
 const copywrite = `Copyright 2019 Durban-Designer : Royce Birnbaum
 
@@ -55,7 +55,25 @@ const name = `Proxy Wrapper`;
 
 const location = './logs';
 
-ProxyWrapper.init(copywrite, name, location);
+const testLog = {
+  class: 'test',
+  message: 'testLog is added manually by the addLog test',
+  data: [
+    {
+      object: 'test',
+      test: []
+    }
+  ]
+};
+
+const test = require('./TestClass.js');
+
+ProxyLogger.init(copywrite, name, location);
+
+test.testA();
+test.testB();
+
+ProxyLogger.addLog(testLog);
 
 ```
 
@@ -65,14 +83,14 @@ ProxyWrapper.init(copywrite, name, location);
 
   - note if you don't specify location it will default to ./logs
 
-  - WARNING if you don't call ProxyWrapper.init() the exit listener wont trigger and logs wont write!
+  - WARNING if you don't call ProxyLogger.init() the exit listener wont trigger and logs wont write!
 
 ### Wrapping a utility class
 
 ##### TestClass.js
 
 ```
-const ProxyWrapper = require('proxy-wrapper');
+const ProxyLogger = require('proxy-logger');
 
 class TestClass {
   constructor () {
@@ -89,7 +107,7 @@ class TestClass {
   }
 }
 
-module.exports = ProxyWrapper.wrap(new TestClass());
+module.exports = ProxyLogger.wrap(new TestClass());
 ```
 
 ### Writing the log
@@ -99,9 +117,9 @@ module.exports = ProxyWrapper.wrap(new TestClass());
 ### Manually adding a log
 
 ```
-const ProxyWrapper = require('proxy-wrapper');
+const ProxyLogger = require('proxy-logger');
 
-ProxyWrapper.addLog({
+ProxyLogger.addLog({
   class: 'class name',
   message: 'a string with a message to log',
   data: {

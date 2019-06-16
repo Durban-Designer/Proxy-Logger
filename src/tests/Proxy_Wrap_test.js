@@ -18,7 +18,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-const ProxyWrapper = require('../../app');
+const ProxyLogger = require('../../app');
 const chai = require('chai');
 const should = chai.should();
 const name = `Proxy Wrapper`;
@@ -41,7 +41,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 USE OR OTHER DEALINGS IN THE SOFTWARE.`;
 
-ProxyWrapper.init(copywrite, name, './src/tests/logs');
+ProxyLogger.init(copywrite, name, './src/tests/logs');
 
 class TestClass {
   constructor () {
@@ -59,7 +59,7 @@ class TestClass {
 }
 
 const NewTest = new TestClass();
-const Test = ProxyWrapper.wrap(NewTest);
+const Test = ProxyLogger.wrap(NewTest);
 
 Test.testA();
 Test.testB();

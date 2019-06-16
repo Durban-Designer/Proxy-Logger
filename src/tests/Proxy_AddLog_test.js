@@ -18,7 +18,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-const ProxyWrapper = require('../../app');
+const ProxyLogger = require('../../app');
 const Logger = require('../utilities/Logger');
 const chai = require('chai');
 const should = chai.should();
@@ -52,7 +52,7 @@ const testLog = {
   ]
 };
 
-ProxyWrapper.init(copywrite, name, './src/tests/logs');
+ProxyLogger.init(copywrite, name, './src/tests/logs');
 
 describe('ProxyWrapper.addLog() should add a log to the Logger class state', () => {
   it('Logger.logs should be an array', () => {
@@ -61,7 +61,7 @@ describe('ProxyWrapper.addLog() should add a log to the Logger class state', () 
 
   it('when a log is added it should be pushed onto the Logger.logs variable', () => {
     let length = Logger.state.logs.length;
-    ProxyWrapper.addLog(testLog);
+    ProxyLogger.addLog(testLog);
     Logger.state.logs[length].should.equal(testLog);
   })
 })

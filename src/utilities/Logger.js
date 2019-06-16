@@ -61,7 +61,7 @@ class Logger {
 
   init (copywrite, name) {
     if (!name) {
-      name = 'Proxy Wrapper'
+      name = 'Proxy Logger'
     }
     if (!copywrite) {
       copywrite = copywrite;
