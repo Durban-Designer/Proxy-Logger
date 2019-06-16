@@ -1,0 +1,28 @@
+{
+  "name": "proxy-logger",
+  "version": "0.0.1",
+  "description": "A logging utility which wraps utility classes in a proxy function. Enables automated logging of any function calls! All logs are written and parsed into markdown to make it easy and clean to debug.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha './src/tests' --exit"
+  },
+  "keywords": [
+    "proxy",
+    "logger",
+    "logs",
+    "logging",
+    "node",
+    "markdown"
+  ],
+  "author": "Durban-Designer",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
