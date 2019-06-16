@@ -52,9 +52,8 @@ const testLog = {
 };
 
 describe('Logger.addLog() should add a log to the Logger class state', () => {
-  it('Logger.logs should be an array', (done) => {
+  it('Logger.logs should be an array', () => {
     Logger.state.logs.should.be.a('array');
-    done();
   })
 
   it('when a log is added it should be pushed onto the Logger.logs variable', () => {

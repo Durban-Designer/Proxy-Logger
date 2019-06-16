@@ -27,7 +27,7 @@ const prettyInitTime = moment().format('MMM-Do-YYYY HH:mm:ss');
 const newline = `\n`;
 const markup = '```';
 
-const copywrite = `Copyright 2019 Durban-Designer : Royce Birnbaum
+const copywriteGlobal = `Copyright 2019 Durban-Designer : Royce Birnbaum
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in the
@@ -64,7 +64,7 @@ class Logger {
       name = 'Proxy Logger'
     }
     if (!copywrite) {
-      copywrite = copywrite;
+      copywrite = copywriteGlobal;
     }
     this.state = {
       name: name,

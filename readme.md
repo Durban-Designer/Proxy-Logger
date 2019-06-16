@@ -154,6 +154,9 @@ $ npm test
 
 * [Soorena](https://stackoverflow.com/users/5284370/soorena)
   - inspired by your stack overflow post on proxying class methods
+* [FarzaTv](https://twitter.com/farzatv?lang=en)
+  - at 5am your [post](https://twitter.com/FarzaTV/status/1140009470736633857) with a King Theta song got me in the zone to code this passion project.
+  - Check out Kanga GG for some cool ass [ML + league](https://www.kanga.gg/)
 * [Grapetoast](https://github.com/Grapetoast)
   - Thanks for pushing me to improve logging beyond a manual implimentation.
 
@@ -181,8 +184,8 @@ PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS 
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 USE OR OTHER DEALINGS IN THE SOFTWARE.
-## Begin logs at time Jun-16th-2019 09:59:25
-##### TestClass - 0.018s runtime
+## Begin logs at time Jun-16th-2019 10:45:13
+##### TestClass - 0.019s runtime
 ```
 Calling Method: testA,
 Target class: TestClass
@@ -241,14 +244,14 @@ Data:
 Begin set state operation
 ```
 
-##### TestClass - 0.02s runtime
+##### TestClass - 0.021s runtime
 ```
 Key to update: b,
 Old Value: null,
 New Value: 2
 ```
 
-##### TestClass - 0.02s runtime
+##### TestClass - 0.021s runtime
 ```
 Post Condition
 Data:
@@ -268,4 +271,14 @@ Data:
 }
 ```
 
-## Total Runtime 0.028 seconds
+##### test - 0.028s runtime
+```
+testLog is added manually by the addLog test
+Data:
+{
+    "object": "test",
+    "test": []
+}
+```
+
+## Total Runtime 0.031 seconds
