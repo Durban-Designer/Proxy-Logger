@@ -156,7 +156,7 @@ $ npm test
   - inspired by your stack overflow post on proxying class methods
 * [FarzaTv](https://twitter.com/farzatv?lang=en)
   - at 5am your [post](https://twitter.com/FarzaTV/status/1140009470736633857) with a King Theta song got me in the zone to code this passion project.
-  - Check out Kanga GG for some cool ass [ML + league](https://www.kanga.gg/)
+  - Check out Kanga GG for some cool [ML + league](https://www.kanga.gg/)
 * [Grapetoast](https://github.com/Grapetoast)
   - Thanks for pushing me to improve logging beyond a manual implimentation.
 
